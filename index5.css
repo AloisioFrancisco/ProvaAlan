@@ -31,11 +31,11 @@ body {
 }
 
 .texto-esquerdo h2 {
-    font-size: 28px;
+    font-size: 36px;
     font-style: italic;
     margin-top: 10px;
     color: #F7D83B;
-    max-width:200px ;
+    max-width:150px ;
     position: absolute;
     top:65px ;
 }
