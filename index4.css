@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(./src/img/cursor.png), auto;
+}
+
+body {
+    background-image:url(./src/img/quadrados\ .png) ;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 50px;
+}
+
+/* Texto da esquerda */
+.texto-esquerdo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.texto-esquerdo h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.texto-esquerdo h2 {
+    font-size: 28px;
+    font-style: italic;
+    margin-top: 10px;
+    color: #F7D83B;
+    max-width:200px ;
+    position: absolute;
+    top:65px ;
+}
+.descricao {
+    font-size: 20px;
+    position: absolute;
+    top: 165px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    max-width: 200px;
+}
+
+/* Imagem da direita */
+.imagem-direita {
+    position: absolute;
+    top: 100px;
+    left: 382px;
+    z-index: 1;
+}
+
+.imagem-direita img {
+    width: 730px;
+    height: auto;
+    
+}
+.texto-direita{
+    position: absolute;
+    bottom:-90px ;
+    left: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    z-index: 10;
+    min-width:400px ;
+}
+.legenda-direita{
+    color: #f9cc36;
+    font-size: 16px;
+    z-index: 10;
+    font-weight: 800;
+}
+.caixa1{
+    background-color: #ffffff;
+    width: 765px ; 
+    height: 765px ;
+    position: absolute;
+    left:365px ;
+    top:80px ;
+    opacity: 0.8;
+    border-radius: 10px; 
+    border-color: #dedede;
+    border-width: 0.01px;
+    border-style: solid;
+    box-shadow: 5px 5px 8px rgba(130, 130, 130, 0.2);
+}
+
+/* imagem do centro */
+.imagem-centro {
+    position: absolute;
+    top: 505px;
+    right: 110px;
+    z-index: 1;
+
+}
+
+.imagem-centro img {
+    width: 600px;
+    height: 375px;
+    
+}
+.texto-centro{
+    position: absolute;
+    bottom:400px ;
+    right: 300px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    z-index: 10;
+    min-width:285px ;
+
+}
+.legenda-centro{
+    position: absolute;
+    bottom:570px ;
+    right: 430px;
+    color: #f9cc36;
+    font-size: 16px;
+    z-index: 10;
+    font-weight: 800;
+
+}
+.caixa2{
+    background-color: #ffffff;
+    width: 630px ; 
+    height: 625px ;
+    position: absolute;
+    right:95px ;
+    top:275px ;
+    opacity: 0.8;
+    border-radius: 10px; 
+    border-color: #dedede;
+    border-width: 0.01px;
+    border-style: solid;
+    box-shadow: 5px 5px 8px rgba(130, 130, 130, 0.2);
+}
+
+/* Decorações amarelas */
+
+
+.container::before {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background-color: #F7D83B;
+    z-index: -1;
+}
+
+.container::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 20px;
+    background-color: #F7D83B;
+    z-index: -1;
+}
+.zoom {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.zoom img {
+    transition: transform 0.4s ease;
+}
+
+.zoom:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

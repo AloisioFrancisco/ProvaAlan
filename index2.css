@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(./src/img/cursor.png), auto;
+}
+
+body {
+    background-image:url(./src/img/quadrados\ .png) ;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1600px;
+    height:700px ;
+    margin: 50px auto;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid rgb(245, 245, 245);
+}
+/* Foto */
+.foto img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+    
+}
+
+/* Texto Sobre Mim */
+.texto-sobre {
+    position: absolute;
+    top: 30px;
+    left: 430px;
+}
+
+.texto-sobre h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.texto-sobre p {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* Conteúdo Título */
+.conteudo-titulo {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+}
+
+.conteudo-titulo h2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Caixa Amarela */
+.caixa-amarela {
+    background-color: #f9cc36;
+    padding: 20px 25px;
+    width: 1000px;
+    height:450px;
+    position: absolute;
+    top: 150px;
+    left: 420px;
+    border-radius: 4px;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+.caixa-amarela strong {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+}
+
+/* Canto superior esquerdo (em L) */
+.canto-superior-esquerdo {
+    position: absolute;
+    top: 120px;
+    left: 395px;
+    width: 30px;
+    height: 30px;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+}
+
+/* Canto inferior direito (em L) */
+.canto-inferior-direito {
+    position: absolute;
+    bottom: 60px;
+    right: 150px;
+    width: 30px;
+    height: 30px;
+    border-right: 4px solid rgb(0, 0, 0);
+    border-bottom: 4px solid black;
+}
+
+/* Quadrado inferior esquerdo */
+.quadrado-inferior-esquerdo {
+    width: 55px;
+    height: 55px;
+    background-color: black;
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+}
+
+/* Retângulo superior direito */
+.retangulo-superior-direito {
+    width: 65px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    top: 75px;
+    right: 25px;
+}
+.caixa-amarela a{
+text-decoration: underline;
+color: black;
+}
+.container::before {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background-color: #F7D83B;
+    z-index: -1;
+}
+
+.container::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 20px;
+    background-color: #F7D83B;
+    z-index: -1;
+}
+.link1{
+text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+.link1:hover{
+    text-decoration: #ffffff;
+ color: #ffffff;
+
+}
+.link2{
+text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+.link2:hover{
+    text-decoration: #ffffff;
+ color: #ffffff;
+
+}
+.link3{
+text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+.link3:hover{
+    text-decoration: #ffffff;
+ color: #ffffff;
+
+}
+/* Responsividade para notebooks */
+@media (max-width: 1440px) {
+    .container {
+        width: 95%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .foto img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .texto-sobre {
+        position: relative;
+        top: auto;
+        left: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .conteudo-titulo {
+        position: relative;
+        top: auto;
+        right: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .caixa-amarela {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+        .canto-superior-esquerdo,
+    .canto-inferior-direito,
+    .quadrado-inferior-esquerdo,
+    .retangulo-superior-direito {
+        display: none;
+    }
+}
+
+/* Responsividade para celulares e tablets */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .foto img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .texto-sobre h1 {
+        font-size: 24px;
+    }
+
+    .texto-sobre p {
+        font-size: 16px;
+    }
+
+    .conteudo-titulo h2 {
+        font-size: 22px;
+    }
+
+    .caixa-amarela {
+        font-size: 16px;
+        padding: 15px;
+        width: 100%;
+        height: auto;
+    }
+
+    .link1, .link2, .link3 {
+        font-size: 16px;
+    }
+
+    /* Ocultar decorações pretas */
+    .canto-superior-esquerdo,
+    .canto-inferior-direito,
+    .quadrado-inferior-esquerdo,
+    .retangulo-superior-direito {
+        display: none;
+    }
+
+    .container::before,
+    .container::after {
+        display: none;
+    }
+}
+  
