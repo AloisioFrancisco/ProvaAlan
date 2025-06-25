@@ -150,7 +150,7 @@ body {
 }
 
 /* Responsivo para notebooks */
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
     .card {
         width: 95%;
         height: auto;

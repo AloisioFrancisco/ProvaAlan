@@ -178,3 +178,98 @@ body {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 1280px){
+    .caixa1{
+    background-color: #ffffff;
+    width: 520px ; 
+    height: 715px ;
+    position: absolute;
+    left:275px ;
+    top:125px ;
+    opacity: 0.8;
+    border-radius: 10px; 
+    border-color: #dedede;
+    border-width: 0.01px;
+    border-style: solid;
+    box-shadow: 5px 5px 8px rgba(130, 130, 130, 0.2);
+}
+.imagem-direita  {
+    position: absolute;
+    top: 360px;
+    left: 290px;
+    border-radius: 40%; 
+    z-index: 1;
+}
+
+.imagem-direita  img {
+    width: 490px;
+    height: 460px;
+}
+
+.legenda-direita {
+    position: absolute;
+    top:-220px ;
+    left: -0px;
+    font-size: 20px;
+    color: #f9cc36;
+    font-weight: 800;
+    z-index: 10;
+    
+}
+ .texto-direita {
+    position: absolute;
+    top: -185px;
+    left: 0px;
+    width: 350px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+}
+    .caixa2{
+    background-color: #ffffff;
+    width: 520px; 
+    height:650px ;
+    position: absolute;
+    right: 150px ;
+    top: 40px;
+    opacity: 0.8;
+    border-radius: 10px; 
+    border-color: #dedede;
+    border-width: 0.01px;
+    border-style: solid;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+} 
+.imagem-centro {
+    position: absolute;
+    top: 60px;
+    left: 880px;
+    z-index: 1;
+}
+
+.imagem-centro img {
+    width: 500px;
+    height: 320px;
+}
+
+.legenda-centro{
+    position: absolute;
+    top: 335px;
+    right: 322px;
+    font-size: 20px;
+    color: #f9cc36;
+    font-weight: 800;
+    z-index: 10; 
+
+}
+
+.texto-centro {
+    position: absolute;
+    top: 365px;
+    left: 20px;
+    width: 350px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    
+}
+}

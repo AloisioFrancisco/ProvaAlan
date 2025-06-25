@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset e Configurações Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -10,68 +10,155 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
     background-image: url(./src/img/quadrados\ .png);
+    
 }
 
-/* Container */
+/* Container Principal */
 .container {
-    width: 100%;
-    min-height: 100vh;
-    padding: 40px;
     position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 40px;
 }
 
-/* Texto lateral */
+/* Área da Esquerda (Título e Descrição) */
 .lado-esquerdo {
-    color: #000;
     position: absolute;
     top: 30px;
     left: 30px;
+    color: #000000;
 }
 
 .lado-esquerdo h1 {
     font-size: 52px;
-    font-weight: 900;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
 }
 
 .lado-esquerdo h2 {
-    font-size: 28px;
-    color: #F7D83B;
+    font-size: 36px;
     font-style: italic;
     margin-top: 10px;
-}
-
-/* Cards brancos */
-.card-branco {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
-    padding: 25px;
-    margin: 40px auto;
-    max-width: 900px;
-    text-align: center;
-    position: relative;
-}
-
-.card-branco figure img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.card-branco figcaption {
+    max-width: 100px;
     color: #F7D83B;
-    font-weight: 700;
-    margin-top: 15px;
+    position: absolute;
+    top: 60px;
+    
+}
+.descricao {
+    font-size: 20px;
+    position: absolute;
+    top: 190px;
+    left: 30px;
+    max-width: 200px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+}
+
+/* Foto de Cima */
+.foto-cima {
+    position: absolute;
+    top: 20px;
+    left: 880px;
+    z-index: 1;
+}
+
+.foto-cima img {
+    width: 460px;
+    height: auto;
+}
+
+.legenda-cima{
+    position: absolute;
+    top: 20px;
+    right: 392px;
     font-size: 16px;
+    color: #f9cc36;
+    font-weight: 800;
+    z-index: 10; 
+
 }
 
-.card-branco p {
-    margin-top: 10px;
-    color: #000;
+.texto-cima {
+    position: absolute;
+    top: 40px;
+    right: -370px;
+    width: 350px;
     font-size: 18px;
-    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    
 }
 
-/* Efeito zoom nas imagens */
+/* Foto de Baixo */
+.foto-baixo {
+    position: absolute;
+    top: 360px;
+    left: 260px;
+    border: radius 40%; 
+    z-index: 1;
+}
+
+.foto-baixo img {
+    width: 560px;
+    height: 460px;
+}
+
+.legenda-baixo {
+    position: absolute;
+    top: -218px;
+    left: -0px;
+    font-size: 16px;
+    color: #f9cc36;
+    font-weight: 800;
+    z-index: 10;
+    
+}
+
+.texto-baixo {
+    position: absolute;
+    top: -175px;
+    left: 0px;
+    width: 350px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+}
+/*foto do meio*/
+.foto-meio{
+    position: absolute;
+    right: 140px;
+    top: 540px;
+    z-index: 1;
+}
+.foto-meio img{
+    width: 515px; 
+    height: 330px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.legenda-meio{
+    position: absolute;
+    bottom:322px ;
+    color: #f9cc36;
+    font-size: 16px;
+    z-index: 10;
+    font-weight: 800;
+    right:550px ;
+    width:330px ;
+}
+.texto-meio{
+    position: absolute;
+    bottom:145px ;
+    right: 580px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    z-index: 10;
+    min-width:300px ;
+    
+}
+
+/* Efeito Zoom nas Imagens */
 .zoom {
     display: inline-block;
     overflow: hidden;
@@ -86,90 +173,406 @@ body {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
-/* Decoração amarela */
-.decoracao-amarela {
-    background-color: #F7D83B;
+.container::before {
+    content: '';
     position: fixed;
-    z-index: -1;
-}
-
-.canto-inferior {
     bottom: 0;
     left: 0;
     width: 150px;
     height: 150px;
+    background-color: #F7D83B;
+    z-index: 1;
 }
 
-.canto-superior {
+.container::after {
+    content: '';
+    position: fixed;
     top: 0;
     right: 0;
     width: 50px;
     height: 20px;
+    background-color: #F7D83B;
+    z-index: 1;
+}
+.caixa1{
+    background-color: #ffffff;
+    width: 500px ; 
+    height: 500px ;
+    position: absolute;
+    left:245px ;
+    height:720px ;
+    width:590px ;
+    top:125px ;
+    opacity: 0.8;
+    border-radius: 10px; 
+    border-color: #dedede;
+    border-width: 0.01px;
+    border-style: solid;
+       box-shadow: 5px 5px 8px rgba(130, 130, 130, 0.2);
+
+    
+
+
+}
+.caixa2{
+    background-color: #ffffff;
+    width: 850px; 
+    height:510px ;
+    position: absolute;
+    right: 205px ;
+    bottom: 428px;
+    opacity: 0.8;
+    border-radius: 10px; 
+    border-color: #dedede;
+    border-width: 0.01px;
+    border-style: solid;
+       box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+
+    
+
+
+}
+.caixa3{
+    background-color: #ffffff;
+    width: 900px ; 
+    height: 370px ;
+    position: absolute; 
+    right: 130px;
+    bottom: 35px;
+    opacity: 0.8;
+    border-radius: 10px; 
+    border-color: #dedede;
+    border-width: 0.01px;
+    border-style: solid;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+
+
+}
+@media (max-width: 1280px){
+    .caixa1{
+    background-color: #ffffff;
+    width: 520px ; 
+    height: 715px ;
+    position: absolute;
+    left:275px ;
+    top:125px ;
+    opacity: 0.8;
+    border-radius: 10px; 
+    border-color: #dedede;
+    border-width: 0.01px;
+    border-style: solid;
+    box-shadow: 5px 5px 8px rgba(130, 130, 130, 0.2);
+}
+.foto-baixo {
+    position: absolute;
+    top: 360px;
+    left: 290px;
+    border-radius: 40%; 
+    z-index: 1;
 }
 
-/* ---------------- RESPONSIVIDADE NOTEBOOK ---------------- */
-@media (max-width: 1200px) {
+.foto-baixo img {
+    width: 490px;
+    height: 460px;
+}
+
+.legenda-baixo {
+    position: absolute;
+    top: -218px;
+    left: -0px;
+    font-size: 20px;
+    color: #f9cc36;
+    font-weight: 800;
+    z-index: 10;
+    
+}
+ .texto-baixo {
+    position: absolute;
+    top: -185px;
+    left: 0px;
+    width: 350px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+}
+    .caixa2{
+    background-color: #ffffff;
+    width: 795px; 
+    height:460px ;
+    position: absolute;
+    right: 10px ;
+    top: 40px;
+    opacity: 0.8;
+    border-radius: 10px; 
+    border-color: #dedede;
+    border-width: 0.01px;
+    border-style: solid;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+} 
+.foto-cima {
+    position: absolute;
+    top: 60px;
+    left: 880px;
+    z-index: 1;
+}
+
+.foto-cima img {
+    width: 420px;
+    height: 420px;
+}
+
+.legenda-cima{
+    position: absolute;
+    top: 65px;
+    right: 142px;
+    font-size: 20px;
+    color: #f9cc36;
+    font-weight: 800;
+    z-index: 10; 
+
+}
+
+.texto-cima {
+    position: absolute;
+    top: 40px;
+    right: -370px;
+    width: 350px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    
+}
+
+.caixa3{
+    background-color: #ffffff;
+    width: 800px ; 
+    height: 370px ;
+    position: absolute; 
+    right: 30px;
+    bottom: -165px;
+    opacity: 0.8;
+    border-radius: 10px; 
+    border-color: #dedede;
+    border-width: 0.01px;
+    border-style: solid;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+}
+.foto-meio{
+    position: absolute;
+    right: 40px;
+    top: 540px;
+    z-index: 1;
+}
+.foto-meio img{
+    width: 515px; 
+    height: 330px;
+    margin-right: 10px;
+    margin-top: 20px;
+
+} 
+.legenda-meio{
+    position: absolute;
+    bottom:322px ;
+    color: #f9cc36;
+    font-size: 20px;
+    z-index: 10;
+    font-weight: 800;
+    right:450px ;
+    width:330px ;
+}
+.texto-meio{
+    position: absolute;
+    bottom:20px ;
+    right: 578px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    z-index: 10;
+    min-width:200px ;
+    
+} 
+
+}
+@media (max-width: 460px){
     .lado-esquerdo {
-        position: static;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .lado-esquerdo h1 {
-        font-size: 42px;
-    }
-
-    .lado-esquerdo h2 {
-        font-size: 26px;
-    }
-
-    .card-branco {
-        margin: 30px auto;
-        padding: 20px;
-        max-width: 90%;
-    }
-
-    .card-branco p {
-        font-size: 16px;
-    }
-
-    .decoracao-amarela.canto-inferior {
-        width: 100px;
-        height: 100px;
-    }
-
-    .decoracao-amarela.canto-superior {
-        width: 40px;
-        height: 15px;
-    }
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    color: #000000;
 }
 
-/* ---------------- RESPONSIVIDADE CELULAR ---------------- */
-@media (max-width: 768px) {
-    .lado-esquerdo h1 {
-        font-size: 32px;
-    }
+.lado-esquerdo h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
 
-    .lado-esquerdo h2 {
-        font-size: 22px;
-    }
+.lado-esquerdo h2 {
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 10px;
+    max-width: 300px;
+    color: #F7D83B;
+    position: absolute;
+    top: 60px;
+    text-align: center;
+    
+}
+.descricao {
+    font-size: 20px;
+    position: absolute;
+    top: 190px;
+    left: 30px;
+    max-width: 200px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+}
+    .caixa1{
+    background-color: #ffffff;
+     width: 370px; 
+    height:660px ;
+    position: absolute;
+    left:37px ;
+    top:1650px ;
+    opacity: 0.8;
+    border-radius: 10px; 
+    border-color: #dedede;
+    border-width: 0.01px;
+    border-style: solid;
+    box-shadow: 5px 5px 8px rgba(130, 130, 130, 0.2);
+}
+.foto-baixo {
+    position: absolute;
+    left:47px ;
+    top:957px ;
+    z-index: 1;
+}
 
-    .card-branco p {
-        font-size: 14px;
-    }
+.foto-baixo img {
+    width: 350px;
+    height: 350px;
+}
 
-    .card-branco figcaption {
-        font-size: 13px;
-    }
+.legenda-baixo {
+    position: absolute;
+    top: 358px;
+    left: 65px;
+    font-size: 20px;
+    color: #f9cc36;
+    font-weight: 800;
+    z-index: 10;
+    
+}
+ .texto-baixo {
+    position: absolute;
+    top: 400px;
+    left: 0px;
+    width: 350px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    text-align: center;
+}
+    .caixa2{
+    background-color: #ffffff;
+    width: 370px; 
+    height:660px ;
+    position: absolute;
+    left:37px ;
+    top: 250px;
+    opacity: 0.8;
+    border-radius: 10px; 
+    border-color: #dedede;
+    border-width: 0.01px;
+    border-style: solid;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+} 
+.foto-cima {
+    position: absolute;
+    left:47px ;
+    top:257px ;
+    z-index: 1;
+}
 
-    .decoracao-amarela.canto-inferior {
-        width: 80px;
-        height: 80px;
-    }
+.foto-cima img {
+    width: 350px;
+    height: 350px;
+}
 
-    .decoracao-amarela.canto-superior {
-        width: 30px;
-        height: 10px;
+.legenda-cima{
+    position: absolute;
+    top: 615px;
+    color: #f9cc36;
+    font-size: 20px;
+    z-index: 10;
+    font-weight: 800;
+    left: 120px;
+    width:330px ;
+
+}
+
+.texto-cima {
+    position: absolute;
+    top: 400px;
+    left: 0px;
+    width: 350px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    text-align: center;
+    
+}
+
+.caixa3{
+    background-color: #ffffff;
+    width: 370px; 
+    height:660px ;
+    position: absolute; 
+    left:37px ;
+    top:950px ;
+    opacity: 0.8;
+    border-radius: 10px; 
+    border-color: #dedede;
+    border-width: 0.01px;
+    border-style: solid;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.2);
+}
+.foto-meio{
+    position: absolute;
+    left:47px ;
+    top:1640px ;
+    border-radius: 40%; 
+    z-index: 1;
+}
+.foto-meio img{
+    width: 350px; 
+    height: 230px;
+    margin-right: 10px;
+    margin-top: 20px;
+    
+
+} 
+.legenda-meio{
+    position: absolute;
+    top: 260px;
+    color: #f9cc36;
+    font-size: 20px;
+    z-index: 10;
+    font-weight: 800;
+    left:65px;
+    width:330px ;
+}
+.texto-meio{
+    position: absolute;
+    top:300px ;
+    left: 80px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    z-index: 10;
+    text-align: center;
+    
+} 
+.container::before,
+    .container::after {
+        display: none;
     }
 }
