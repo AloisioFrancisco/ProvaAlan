@@ -48,7 +48,7 @@ body {
     max-width: 200px;
 }
 
-/* Imagem da direita */
+
 .imagem-direita {
     position: absolute;
     top: 100px;
@@ -91,7 +91,7 @@ body {
     box-shadow: 5px 5px 8px rgba(130, 130, 130, 0.2);
 }
 
-/* imagem do centro */
+
 .imagem-centro {
     position: absolute;
     top: 505px;
@@ -140,7 +140,7 @@ body {
     box-shadow: 5px 5px 8px rgba(130, 130, 130, 0.2);
 }
 
-/* Decorações amarelas */
+
 
 
 .container::before {
