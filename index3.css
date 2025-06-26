@@ -13,7 +13,7 @@ body {
     
 }
 
-/* Container Principal */
+
 .container {
     position: relative;
     width: 100%;
@@ -21,7 +21,7 @@ body {
     padding: 40px;
 }
 
-/* Área da Esquerda (Título e Descrição) */
+
 .lado-esquerdo {
     position: absolute;
     top: 30px;
@@ -90,7 +90,7 @@ body {
     
 }
 
-/* Foto de Baixo */
+
 .foto-baixo {
     position: absolute;
     top: 360px;
@@ -124,7 +124,7 @@ body {
     color: rgb(0, 0, 0);
     z-index: 10;
 }
-/*foto do meio*/
+
 .foto-meio{
     position: absolute;
     right: 140px;
@@ -158,7 +158,7 @@ body {
     
 }
 
-/* Efeito Zoom nas Imagens */
+
 .zoom {
     display: inline-block;
     overflow: hidden;
